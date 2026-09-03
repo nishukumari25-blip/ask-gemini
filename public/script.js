@@ -25,7 +25,7 @@ async function handleAsk() {
     result.innerText = data.answer;
 
   } catch (e) {
-    result.innerHTML = `Failed to fetch response. Please try again!</span>`;
+    result.innerText = `Failed to fetch response. Please try again!`;
   }
 }
 
