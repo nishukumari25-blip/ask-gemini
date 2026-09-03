@@ -1,0 +1,127 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: #0b0f19;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.15) 0px, transparent 50%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #f3f4f6;
+}
+
+.container {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 36px;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+}
+
+.input-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+input {
+  flex: 1;
+  padding: 14px 18px;
+  background: rgba(31, 41, 55, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  font-size: 15px;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: #6b7280;
+}
+
+input:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+  background: rgba(31, 41, 55, 0.9);
+}
+
+button {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.output-box {
+  background: rgba(31, 41, 55, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 14px;
+  min-height: 100px;
+  max-height: 320px;
+  overflow-y: auto;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #e5e7eb;
+  white-space: pre-wrap;
+}
+
+/* Custom Scrollbar */
+.output-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.output-box::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.thinking {
+  color: #9ca3af;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
